@@ -1,0 +1,587 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.iphone {
+	margin-top: 15px;
+	margin-left: 500px;
+	height: 1020px;
+	width: 515px;
+	background-color: rgb(7, 5, 5);
+	position: relative;
+	border-top-left-radius: 95px;
+	border-top-right-radius: 95px;
+	border-bottom-left-radius: 95px;
+	border-bottom-right-radius: 95px;
+	border: 3px rgb(255, 255, 255) solid;
+}
+
+.iphone-shadow {
+	height: 1020px;
+	width: 515px;
+	background-color: #000000;
+	bottom: 0;
+	position: absolute;
+	margin: auto;
+	border-top-left-radius: 95px;
+	border-top-right-radius: 95px;
+	border-bottom-left-radius: 95px;
+	border-bottom-right-radius: 95px;
+	border: 5px rgb(82, 80, 80) solid;
+}
+
+.audio-top {
+	background-color: black;
+	height: 20px;
+	width: 60px;
+	position: absolute;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	top: 6px;
+	left: 206px;
+}
+
+.screen {
+	height: 998px;
+	width: 490px;
+	position: relative;
+	top: 6px;
+	left: 7px;
+	border-top-left-radius: 95px;
+	border-top-right-radius: 95px;
+	border-bottom-left-radius: 95px;
+	border-bottom-right-radius: 95px;
+	border: 5px rgb(0, 0, 0) solid;
+
+	background-image: url(pics/ScreenImage.jpg);
+}
+
+/* .screen:active{
+        content: url(iphone.png);
+       
+      } */
+
+.icons {
+	display: inline-block;
+	height: 48px;
+	width: 48px;
+	background-repeat: no-repeat;
+	object-fit: cover;
+	cursor: pointer;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.icons:hover {
+	animation: shake 0.5s;
+
+	animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+	0% {
+		transform: translate(1px, 1px) rotate(0deg);
+	}
+	10% {
+		transform: translate(-1px, -2px) rotate(-1deg);
+	}
+	20% {
+		transform: translate(-3px, 0px) rotate(1deg);
+	}
+	30% {
+		transform: translate(3px, 2px) rotate(0deg);
+	}
+	40% {
+		transform: translate(1px, -1px) rotate(1deg);
+	}
+	50% {
+		transform: translate(-1px, 2px) rotate(-1deg);
+	}
+	60% {
+		transform: translate(-3px, 1px) rotate(0deg);
+	}
+	70% {
+		transform: translate(3px, 1px) rotate(-1deg);
+	}
+	80% {
+		transform: translate(-1px, -1px) rotate(1deg);
+	}
+	90% {
+		transform: translate(1px, 2px) rotate(0deg);
+	}
+	100% {
+		transform: translate(1px, -2px) rotate(-1deg);
+	}
+}
+
+.icon-one {
+	position: absolute;
+	background-image: url(pics/appStoreIcon.jpg);
+	top: 711px;
+	left: 32px;
+	height: 60px;
+	width: 60px;
+	background-size: cover;
+}
+
+.icon-two {
+	height: 67px;
+	width: 67px;
+	background-size: cover;
+	position: absolute;
+	background-image: url(pics/photosIcon.jpg);
+	top: 607px;
+	left: 32px;
+}
+
+.icon-three {
+	position: absolute;
+	width: 74px;
+	height: 74px;
+	background-size: cover;
+	background-image: url(pics/messagesIcon.jpg);
+	top: 900px;
+	left: 150px;
+	z-index: 5;
+}
+
+.icon-four {
+	height: 70px;
+	width: 70px;
+	background-size: cover;
+	position: absolute;
+	background-image: url(pics/settingsIcon.jpg);
+	top: 605px;
+	left: 250px;
+}
+
+.icon-five {
+	height: 77px;
+	width: 77px;
+	background-size: cover;
+	position: absolute;
+	background-image: url(pics/cameraIcon.jpg);
+
+	top: 902px;
+	left: 260px;
+	z-index: 2;
+}
+
+.icon-six {
+	background-size: cover;
+	height: 64px;
+	width: 64px;
+	position: absolute;
+	background-image: url(pics/notesIcon.jpg);
+	top: 506px;
+	left: 140px;
+}
+
+.icon-seven {
+	background-size: cover;
+	height: 65px;
+	width: 65px;
+	position: absolute;
+	background-image: url(pics/safariIcon.jpg);
+	top: 607px;
+	left: 366px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.icon-eight {
+	position: absolute;
+	height: 65px;
+	width: 65px;
+	background-image: url(pics/mapsIcon.jpg);
+	top: 507px;
+	left: 254px;
+	background-size: cover;
+}
+.icon-nine {
+	position: absolute;
+	height: 60px;
+	width: 60px;
+	background-image: url(pics/googleIcon.jpg);
+	top: 710px;
+	left: 140px;
+	background-size: cover;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.icon-ten {
+	position: absolute;
+	height: 60px;
+	width: 60px;
+	background-image: url(pics/facebookIcon.jpg);
+	top: 710px;
+	left: 255px;
+	background-size: cover;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.icon-eleven {
+	position: absolute;
+	height: 65px;
+	width: 65px;
+	background-image: url(pics/callIcone.jpg);
+	top: 904px;
+	left: 55px;
+	background-size: cover;
+	z-index: 2;
+}
+
+.icon-twelve {
+	position: absolute;
+	height: 66px;
+	width: 66px;
+	background-image: url(pics/musicIcon.jpg);
+	top: 905px;
+	left: 370px;
+	background-size: cover;
+	z-index: 2;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.icon-thirteen {
+	position: absolute;
+	height: 68px;
+	width: 68px;
+	background-size: cover;
+	background-image: url(pics/appleTvIcon.jpg);
+	top: 605px;
+	left: 135px;
+}
+
+.icon-fourteen {
+	position: absolute;
+	height: 65px;
+	width: 65px;
+	background-image: url(pics/spotifyIcon.jpg);
+	top: 505px;
+	left: 33px;
+	background-size: cover;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+.icon-fifteen {
+	position: absolute;
+	height: 60px;
+	width: 60px;
+	background-image: url(pics/whatsAppIcon.jpg);
+	top: 712px;
+	left: 370px;
+	background-size: cover;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.icon-sixteen {
+	position: absolute;
+	height: 70px;
+	width: 70px;
+	background-image: url(pics/faceTimeIcon.jpg);
+	top: 506px;
+	left: 364px;
+	background-size: contain;
+}
+
+.weather {
+	position: absolute;
+	background-image: url(pics/weatherMenu.jpg);
+	height: 119px;
+	width: 253px;
+	background-size: contain;
+	top: 90px;
+	left: 195px;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px;
+	border-bottom-left-radius: 18px;
+	border-bottom-right-radius: 18px;
+}
+
+.weather:hover {
+	transition: 0.5s;
+	height: 262px;
+	width: 274px;
+	background-size: cover;
+	background-image: url("/pics/weatherTrans.png");
+}
+.spotify-play {
+	background-image: url("pics/spotifyPlay.jpg");
+	position: absolute;
+	top: 235px;
+	left: 40px;
+	height: 118px;
+	width: 125.5px;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+	background-size: contain;
+}
+
+.spotify-play:hover {
+	transition: 4s;
+	transform: translate(280px, 0px);
+}
+
+.heart {
+	background-image: url("pics/heart.jpg");
+	position: absolute;
+	height: 118px;
+	width: 125.5px;
+	top: 370px;
+	left: 40px;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+	background-size: cover;
+}
+.heart {
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1.2);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+.clock {
+	background-image: url("pics/clock.jpg");
+	position: absolute;
+	height: 118px;
+	width: 117px;
+	top: 370px;
+	left: 200px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background-size: contain;
+}
+
+.clock:hover {
+	transition: 0.2s;
+	transform: rotate(3.142rad);
+}
+
+.clock:not(:hover) {
+	transition: 0.2s;
+	transform: rotate(0);
+}
+
+.navigation {
+	background-image: url("pics/navigation.jpg");
+	position: absolute;
+	height: 118px;
+	width: 118px;
+	top: 370px;
+	left: 340px;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px;
+	border-bottom-left-radius: 18px;
+	border-bottom-right-radius: 18px;
+	background-size: contain;
+}
+
+.image-fader {
+	width: 150px;
+	height: 150px;
+}
+.image-fader img {
+	position: absolute;
+	top: 230px;
+	left: 202px;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px;
+	border-bottom-left-radius: 18px;
+	border-bottom-right-radius: 18px;
+	width: 120px;
+	height: 120px;
+	background-image: url(pics/pets.jpg);
+}
+.image-fader img {
+	animation-name: imagefade;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 20s;
+}
+
+@keyframes imagefade {
+	0% {
+		opacity: 1;
+	}
+	17% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 0;
+	}
+
+	92% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.image-fader img:nth-of-type(1) {
+	animation-delay: 16s;
+}
+.image-fader img:nth-of-type(2) {
+	animation-delay: 12s;
+}
+.image-fader img:nth-of-type(3) {
+	animation-delay: 8s;
+}
+.image-fader img:nth-of-type(4) {
+	animation-delay: 4s;
+}
+.image-fader img:nth-of-type(5) {
+	animation-delay: 0;
+}
+.back-space {
+	width: 120px;
+	height: 93px;
+	position: absolute;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.white-container {
+	position: absolute;
+	width: 440px;
+	height: 90px;
+	background-color: white;
+	top: 895px;
+	left: 25px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	opacity: 0.4;
+}
+
+.calendar {
+	position: absolute;
+	background-image: url(pics/calender.jpg);
+	height: 119px;
+	width: 120px;
+	background-size: contain;
+	top: 90px;
+	left: 40px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	cursor: pointer;
+}
+
+.calendar:active {
+	transition: 1s;
+	background-image: url(pics/calenderTrans.jpg);
+}
+
+.app-store {
+	position: absolute;
+	top: 65px;
+	left: 5px;
+}
+
+.google {
+	position: absolute;
+	top: 66px;
+	left: 12px;
+}
+
+.facebook {
+	position: absolute;
+	top: 66px;
+	left: 5px;
+}
+.whatsapp {
+	position: absolute;
+	top: 66px;
+	left: 2px;
+}
+
+.photos {
+	position: absolute;
+	top: 70px;
+	left: 16px;
+}
+
+.settings {
+	position: absolute;
+	top: 70px;
+	left: 14px;
+}
+
+.apple-tv {
+	position: absolute;
+	top: 72px;
+	left: 10px;
+}
+
+.safari {
+	position: absolute;
+	top: 72px;
+	left: 15px;
+}
+
+.spotify {
+	position: absolute;
+	top: 69px;
+	left: 12px;
+}
+
+.maps {
+	position: absolute;
+	top: 69px;
+	left: 17px;
+}
+
+.notes {
+	position: absolute;
+	top: 70px;
+	left: 15px;
+}
+.face-time {
+	position: absolute;
+	top: 75px;
+	left: 8px;
+}
