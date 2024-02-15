@@ -10,309 +10,45 @@ let pets = document.querySelector('.image-fader')
 let clock = document.querySelector('.clock')
 let navigation = document.querySelector('.navigation')
 
-document.querySelector('.icon-one').addEventListener('click', function () {
-  screen.style.backgroundImage = "url('pics/appStoreMenu.jpg')"
-  screen.style.backgroundRepeat = 'no-repeat'
-  screen.style.backgroundSize = 'cover'
 
-  for (let i = 0; i < icons.length; i++) {
-    icons[i].style.opacity = '0'
-  }
-  weather.style.opacity = '0'
-  whiteContainer.style.opacity = '0'
-  heart.style.opacity = '0'
-  calendar.style.opacity = '0'
-  spotifyPlay.style.opacity = '0'
-  pets.style.opacity = '0'
-  clock.style.opacity = '0'
-  navigation.style.opacity = '0'
+const addIphoneClickEvent = (selector, urlPhoto) => {
+  document.querySelector(selector).addEventListener('click', function () {
+    screen.style.backgroundImage = `url('pics/${urlPhoto}')`
+    screen.style.backgroundRepeat = 'no-repeat'
+    screen.style.backgroundSize = 'cover'
 
-})
+    for (let i = 0; i < icons.length; i++) {
+      icons[i].style.opacity = '0'
+    }
+    weather.style.opacity = '0'
+    whiteContainer.style.opacity = '0'
+    heart.style.opacity = '0'
+    calendar.style.opacity = '0'
+    spotifyPlay.style.opacity = '0'
+    pets.style.opacity = '0'
+    clock.style.opacity = '0'
+    navigation.style.opacity = '0'
 
-document.querySelector('.icon-two').addEventListener('click', function () {
-  screen.style.backgroundImage = "url('/pics/photosMenu.jpg')"
-  screen.style.backgroundRepeat = 'no-repeat'
-  screen.style.backgroundSize = 'cover'
-  for (let i = 0; i < icons.length; i++) {
-    icons[i].style.opacity = '0'
-  }
-  weather.style.opacity = '0'
-  whiteContainer.style.opacity = '0'
-  heart.style.opacity = '0'
-  calendar.style.opacity = '0'
-  spotifyPlay.style.opacity = '0'
-  pets.style.opacity = '0'
-  clock.style.opacity = '0'
-  navigation.style.opacity = '0'
-
-})
-
-
-document.querySelector('.icon-three').addEventListener('click', function () {
-  screen.style.backgroundImage = "url('pics/mailMenu.jpg')"
-  screen.style.backgroundRepeat = 'no-repeat'
-  for (let i = 0; i < icons.length; i++) {
-    icons[i].style.opacity = '0'
-  }
-  weather.style.opacity = '0'
-  whiteContainer.style.opacity = '0'
-  heart.style.opacity = '0'
-  calendar.style.opacity = '0'
-  spotifyPlay.style.opacity = '0'
-  pets.style.opacity = '0'
-  clock.style.opacity = '0'
-  navigation.style.opacity = '0'
-
-})
-
-document.querySelector('.icon-four').addEventListener('click', function () {
-  screen.style.backgroundImage = "url('pics/settingsMenu.jpg')"
-  screen.style.backgroundRepeat = 'no-repeat'
-  screen.style.backgroundSize = 'cover'
-  for (let i = 0; i < icons.length; i++) {
-    icons[i].style.opacity = '0'
-  }
-  weather.style.opacity = '0'
-  whiteContainer.style.opacity = '0'
-  heart.style.opacity = '0'
-  calendar.style.opacity = '0'
-  spotifyPlay.style.opacity = '0'
-  pets.style.opacity = '0'
-  clock.style.opacity = '0'
-  navigation.style.opacity = '0'
-
-})
-
-document.querySelector('.icon-five').addEventListener('click', function () {
-  screen.style.backgroundImage = "url('pics/cameraMenu.jpg')"
-  screen.style.backgroundRepeat = 'no-repeat'
-  screen.style.backgroundSize = 'cover'
-
-  for (let i = 0; i < icons.length; i++) {
-    icons[i].style.opacity = '0'
-  }
-  weather.style.opacity = '0'
-  whiteContainer.style.opacity = '0'
-  heart.style.opacity = '0'
-  calendar.style.opacity = '0'
-  spotifyPlay.style.opacity = '0'
-  pets.style.opacity = '0'
-  clock.style.opacity = '0'
-  navigation.style.opacity = '0'
-
-})
-
-
-document.querySelector('.icon-six').addEventListener('click', function () {
-  screen.style.backgroundImage = "url('pics/notesMenu.jpg')"
-  screen.style.backgroundRepeat = 'no-repeat'
-  screen.style.backgroundSize = 'cover'
-
-  for (let i = 0; i < icons.length; i++) {
-    icons[i].style.opacity = '0'
-  }
-  weather.style.opacity = '0'
-  whiteContainer.style.opacity = '0'
-  heart.style.opacity = '0'
-  calendar.style.opacity = '0'
-  spotifyPlay.style.opacity = '0'
-  pets.style.opacity = '0'
-  clock.style.opacity = '0'
-  navigation.style.opacity = '0'
-
-})
-
-document.querySelector('.icon-seven').addEventListener('click', function () {
-  screen.style.backgroundImage = "url('pics/safariMenu.jpg')"
-  screen.style.backgroundRepeat = 'no-repeat'
-  screen.style.backgroundSize = 'cover'
-
-  for (let i = 0; i < icons.length; i++) {
-    icons[i].style.opacity = '0'
-  }
-  weather.style.opacity = '0'
-  whiteContainer.style.opacity = '0'
-  heart.style.opacity = '0'
-  calendar.style.opacity = '0'
-  spotifyPlay.style.opacity = '0'
-  pets.style.opacity = '0'
-  clock.style.opacity = '0'
-  navigation.style.opacity = '0'
-
-})
-
-document.querySelector('.icon-eight').addEventListener('click', function () {
-  screen.style.backgroundImage = "url('pics/MapsMenu.jpg')"
-  screen.style.backgroundRepeat = 'no-repeat'
-  screen.style.backgroundSize = 'cover'
-
-  for (let i = 0; i < icons.length; i++) {
-    icons[i].style.opacity = '0'
-  }
-  weather.style.opacity = '0'
-  whiteContainer.style.opacity = '0'
-  heart.style.opacity = '0'
-  calendar.style.opacity = '0'
-  spotifyPlay.style.opacity = '0'
-  pets.style.opacity = '0'
-  clock.style.opacity = '0'
-  navigation.style.opacity = '0'
-
-})
-
-document.querySelector('.icon-nine').addEventListener('click', function () {
-  screen.style.backgroundImage = "url('pics/googleMenu.jpg')"
-  screen.style.backgroundRepeat = 'no-repeat'
-  screen.style.backgroundSize = 'cover'
-
-  for (let i = 0; i < icons.length; i++) {
-    icons[i].style.opacity = '0'
-  }
-  weather.style.opacity = '0'
-  whiteContainer.style.opacity = '0'
-  heart.style.opacity = '0'
-  calendar.style.opacity = '0'
-  spotifyPlay.style.opacity = '0'
-  pets.style.opacity = '0'
-  clock.style.opacity = '0'
-  navigation.style.opacity = '0'
-
-})
-
-document.querySelector('.icon-ten').addEventListener('click', function () {
-  screen.style.backgroundImage = "url('pics/facebookMenu.jpg')"
-  screen.style.backgroundRepeat = 'no-repeat'
-  screen.style.backgroundSize = 'cover'
-
-  for (let i = 0; i < icons.length; i++) {
-    icons[i].style.opacity = '0'
-  }
-  weather.style.opacity = '0'
-  whiteContainer.style.opacity = '0'
-  heart.style.opacity = '0'
-  calendar.style.opacity = '0'
-  spotifyPlay.style.opacity = '0'
-  pets.style.opacity = '0'
-  clock.style.opacity = '0'
-  navigation.style.opacity = '0'
-
-})
-document.querySelector('.icon-eleven').addEventListener('click', function () {
-  screen.style.backgroundImage = "url('pics/callMenu.jpg')"
-  screen.style.backgroundRepeat = 'no-repeat'
-  screen.style.backgroundSize = 'cover'
-
-  for (let i = 0; i < icons.length; i++) {
-    icons[i].style.opacity = '0'
-  }
-  weather.style.opacity = '0'
-  whiteContainer.style.opacity = '0'
-  heart.style.opacity = '0'
-  calendar.style.opacity = '0'
-  spotifyPlay.style.opacity = '0'
-  pets.style.opacity = '0'
-  clock.style.opacity = '0'
-  navigation.style.opacity = '0'
-
-})
-
-document.querySelector('.icon-twelve').addEventListener('click', function () {
-  screen.style.backgroundImage = "url('pics/musicMenu.jpg')"
-  screen.style.backgroundRepeat = 'no-repeat'
-  screen.style.backgroundSize = 'cover'
-
-  for (let i = 0; i < icons.length; i++) {
-    icons[i].style.opacity = '0'
-  }
-  weather.style.opacity = '0'
-  whiteContainer.style.opacity = '0'
-  heart.style.opacity = '0'
-  calendar.style.opacity = '0'
-  spotifyPlay.style.opacity = '0'
-  pets.style.opacity = '0'
-  clock.style.opacity = '0'
-  navigation.style.opacity = '0'
-
-})
-
-document.querySelector('.icon-thirteen').addEventListener('click', function () {
-  screen.style.backgroundImage = "url('pics/appleTvMenu.jpg')"
-  screen.style.backgroundRepeat = 'no-repeat'
-  screen.style.backgroundSize = 'cover'
-
-  for (let i = 0; i < icons.length; i++) {
-    icons[i].style.opacity = '0'
-  }
-  weather.style.opacity = '0'
-  whiteContainer.style.opacity = '0'
-  heart.style.opacity = '0'
-  calendar.style.opacity = '0'
-  spotifyPlay.style.opacity = '0'
-  pets.style.opacity = '0'
-  clock.style.opacity = '0'
-  navigation.style.opacity = '0'
-
-})
-
-document.querySelector('.icon-fourteen').addEventListener('click', function () {
-  screen.style.backgroundImage = "url('pics/spotifyMenu.jpg')"
-  screen.style.backgroundRepeat = 'no-repeat'
-  screen.style.backgroundSize = 'cover'
-
-  for (let i = 0; i < icons.length; i++) {
-    icons[i].style.opacity = '0'
-  }
-  weather.style.opacity = '0'
-  whiteContainer.style.opacity = '0'
-  heart.style.opacity = '0'
-  calendar.style.opacity = '0'
-  spotifyPlay.style.opacity = '0'
-  pets.style.opacity = '0'
-  clock.style.opacity = '0'
-  navigation.style.opacity = '0'
-
-})
-
-document.querySelector('.icon-fifteen').addEventListener('click', function () {
-  screen.style.backgroundImage = "url('pics/whatsAppMenu.jpg')"
-  screen.style.backgroundRepeat = 'no-repeat'
-  screen.style.backgroundSize = 'cover'
-
-  for (let i = 0; i < icons.length; i++) {
-    icons[i].style.opacity = '0'
-  }
-  weather.style.opacity = '0'
-  whiteContainer.style.opacity = '0'
-  heart.style.opacity = '0'
-  calendar.style.opacity = '0'
-  spotifyPlay.style.opacity = '0'
-  pets.style.opacity = '0'
-  clock.style.opacity = '0'
-  navigation.style.opacity = '0'
-
-})
-
-document.querySelector('.icon-sixteen').addEventListener('click', function () {
-  screen.style.backgroundImage = "url('pics/faceTimeMenu.jpg')"
-  screen.style.backgroundRepeat = 'no-repeat'
-  screen.style.backgroundSize = 'cover'
-
-  for (let i = 0; i < icons.length; i++) {
-    icons[i].style.opacity = '0'
-  }
-  weather.style.opacity = '0'
-  whiteContainer.style.opacity = '0'
-  heart.style.opacity = '0'
-  calendar.style.opacity = '0'
-  spotifyPlay.style.opacity = '0'
-  pets.style.opacity = '0'
-  clock.style.opacity = '0'
-  navigation.style.opacity = '0'
-
-})
+  })
+}
+addIphoneClickEvent('.icon-one', 'appStoreMenu.jpg')
+addIphoneClickEvent('.icon-two', 'photosMenu.jpg')
+addIphoneClickEvent('.icon-three', 'mailMenu.jpg')
+addIphoneClickEvent('.icon-four', 'settingsMenu.jpg')
+addIphoneClickEvent('.icon-five', 'cameraMenu.jpg')
+addIphoneClickEvent('.icon-six', 'notesMenu.jpg')
+addIphoneClickEvent('.icon-seven', 'safariMenu.jpg')
+addIphoneClickEvent('.icon-eight', 'MapsMenu.jpg')
+addIphoneClickEvent('.icon-nine', 'googleMenu.jpg')
+addIphoneClickEvent('.icon-ten', 'facebookMenu.jpg')
+addIphoneClickEvent('.icon-eleven', 'callMenu.jpg')
+addIphoneClickEvent('.icon-twelve', 'musicMenu.jpg')
+addIphoneClickEvent('.icon-thirteen', 'appleTvMenu.jpg')
+addIphoneClickEvent('.icon-fourteen', 'spotifyMenu.jpg')
+addIphoneClickEvent('.icon-fifteen', 'whatsAppMenu.jpg')
+addIphoneClickEvent('.icon-sixteen', 'faceTimeMenu.jpg')
 
 backSpace.addEventListener('click', function () {
-
   screen.style.backgroundImage = "url('pics/ScreenImage.jpg')"
   screen.style.backgroundSize = 'fit'
   for (let i = 0; i < icons.length; i++) {
