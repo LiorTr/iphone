@@ -117,7 +117,7 @@
 	}
 }
 
-.icon-one {
+.icon-app-store {
 	position: absolute;
 	background-image: url(pics/appStoreIcon.jpg);
 	top: 711px;
@@ -127,7 +127,7 @@
 	background-size: cover;
 }
 
-.icon-two {
+.icon-photos {
 	height: 67px;
 	width: 67px;
 	background-size: cover;
@@ -137,7 +137,7 @@
 	left: 32px;
 }
 
-.icon-three {
+.icon-sms {
 	position: absolute;
 	width: 74px;
 	height: 74px;
@@ -148,7 +148,7 @@
 	z-index: 5;
 }
 
-.icon-four {
+.icon-settings {
 	height: 70px;
 	width: 70px;
 	background-size: cover;
@@ -158,7 +158,7 @@
 	left: 250px;
 }
 
-.icon-five {
+.icon-camera {
 	height: 77px;
 	width: 77px;
 	background-size: cover;
@@ -170,7 +170,7 @@
 	z-index: 2;
 }
 
-.icon-six {
+.icon-notes {
 	background-size: cover;
 	height: 64px;
 	width: 64px;
@@ -180,7 +180,7 @@
 	left: 140px;
 }
 
-.icon-seven {
+.icon-safari {
 	background-size: cover;
 	height: 65px;
 	width: 65px;
@@ -194,7 +194,7 @@
 	border-bottom-right-radius: 15px;
 }
 
-.icon-eight {
+.icon-maps {
 	position: absolute;
 	height: 65px;
 	width: 65px;
@@ -203,7 +203,7 @@
 	left: 254px;
 	background-size: cover;
 }
-.icon-nine {
+.icon-google {
 	position: absolute;
 	height: 60px;
 	width: 60px;
@@ -217,7 +217,7 @@
 	border-bottom-right-radius: 15px;
 }
 
-.icon-ten {
+.icon-facebook {
 	position: absolute;
 	height: 60px;
 	width: 60px;
@@ -231,7 +231,7 @@
 	border-bottom-right-radius: 15px;
 }
 
-.icon-eleven {
+.icon-call {
 	position: absolute;
 	height: 65px;
 	width: 65px;
@@ -242,7 +242,7 @@
 	z-index: 2;
 }
 
-.icon-twelve {
+.icon-music {
 	position: absolute;
 	height: 66px;
 	width: 66px;
@@ -257,7 +257,7 @@
 	border-bottom-right-radius: 15px;
 }
 
-.icon-thirteen {
+.icon-apple-tv {
 	position: absolute;
 	height: 68px;
 	width: 68px;
@@ -267,7 +267,7 @@
 	left: 135px;
 }
 
-.icon-fourteen {
+.icon-spotify {
 	position: absolute;
 	height: 65px;
 	width: 65px;
@@ -280,7 +280,7 @@
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;
 }
-.icon-fifteen {
+.icon-whats-app {
 	position: absolute;
 	height: 60px;
 	width: 60px;
@@ -294,7 +294,7 @@
 	border-bottom-right-radius: 15px;
 }
 
-.icon-sixteen {
+.icon-face-time {
 	position: absolute;
 	height: 70px;
 	width: 70px;
